@@ -19,17 +19,18 @@ You can easily define your own Project Port for this package.
 5. The package will take care of the rest
 
 Code
-	sdfsdf
-    class YourCustomPort:	
-		def port(projectFilePath):
-    		#Implement code to get folders to include in your project
-			#...
 
-			#Add the folder to collection of folders
-			ProjectPortManager.add_folder(follow_symlinks, path, folder_exclude_patterns, file_exclude_patterns)
-        
-        	#Register Port with the system
-        	ProjectPortManager.add_port('.ext', YourCustomPort)
+    class YourCustomPort:	
+        def port(projectFilePath):
+            #Implement code to get folders to include in your project
+            #...
+            
+            #Add the folder to collection of folders
+            ProjectPortManager.add_folder(follow_symlinks, path, folder_exclude_patterns, file_exclude_patterns)
+    
+    #Register Port with the system
+    ProjectPortManager.add_port('.ext', YourCustomPort)
+
 
 
 
