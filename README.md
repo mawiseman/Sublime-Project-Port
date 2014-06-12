@@ -12,13 +12,14 @@ To open a Project from another IDE, within Sublime select File > Open File and s
 
 ### How to define your own Project Port
 You can easily define your own Project Port for this package.
+
 1. Create a new paython file in the projecttypes folder
 2. Create a class with a unique name (relative to your project file type)
 3. Make sure your class implements: port(projectfile) 
 4. Make sure you register you file extension and class at the bottom of your script
 5. The package will take care of the rest
 
-Code
+Sample Code
 
     class YourCustomPort:	
         def port(projectFilePath):
