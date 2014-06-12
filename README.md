@@ -17,7 +17,7 @@ You can easily define your own Project Port for this package.
 2. Create a class with a unique name (relative to your project file type)
 3. Make sure your class implements: port(projectfile) 
 4. Make sure you register you file extension and class at the bottom of your script
-5. The package will take care of the rest
+5. Add an import statement to sublime_events.py
 
 Sample Code
 
