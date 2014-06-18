@@ -4,7 +4,7 @@ class VisualStudioPort:
 	def get_projects(slnPath):
 		csprojFiles = []
 
-		slnFile = open(slnPath, 'r')
+		slnFile = open(slnPath, 'r', encoding='utf8')
 
 		#Process the sln file
 		for slnLine in slnFile:
